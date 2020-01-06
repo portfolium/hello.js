@@ -4888,28 +4888,26 @@ if (typeof chrome === 'object' && typeof chrome.identity === 'object' && chrome.
 			oauth: {
 				version: 2,
 				response_type: 'code',
-				/*auth: 'https://www.linkedin.com/uas/oauth2/authorization',
-				grant: 'https://www.linkedin.com/uas/oauth2/accessToken'*/
-                auth: 'https://www.linkedin.com/oauth/v2/authorization',
-                grant: 'https://www.linkedin.com/oauth/v2/accessToken'
+				auth: 'https://www.linkedin.com/uas/oauth2/authorization',
+				grant: 'https://www.linkedin.com/uas/oauth2/accessToken'
 			},
 
 			// Refresh the access_token once expired
 			refresh: true,
 
 			scope: {
-				basic: 'r_liteprofile',
-				email: '',
-				files: '',
-				friends: '',
-				photos: '',
-				publish: 'w_share',
-				publish_files: 'w_share',
-				share: '',
-				videos: '',
-				offline_access: ''
-			},
-			scope_delim: ' ',
+                basic: 'r_liteprofile',
+                email: 'r_emailaddress',
+                files: '',
+                friends: '',
+                photos: '',
+                publish: 'w_member_social',
+                publish_files: 'w_member_social',
+                share: '',
+                videos: '',
+                offline_access: ''
+            },
+            scope_delim: ' ',
 
 			base: 'https://api.linkedin.com/v2/',
 

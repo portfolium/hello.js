@@ -7,26 +7,21 @@
 			oauth: {
 				version: 2,
 				response_type: 'code',
-				/*auth: 'https://www.linkedin.com/uas/oauth2/authorization',
-				grant: 'https://www.linkedin.com/uas/oauth2/accessToken'*/
-                auth: 'https://www.linkedin.com/oauth/v2/authorization',
-                grant: 'https://www.linkedin.com/oauth/v2/accessToken'
+				auth: 'https://www.linkedin.com/uas/oauth2/authorization',
+				grant: 'https://www.linkedin.com/uas/oauth2/accessToken'
 			},
-
-            https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=*&scope=*&state=*&redirect_uri=*
-            https://www.linkedin.com/oauth/v2/accessToken
 
 			// Refresh the access_token once expired
 			refresh: true,
 
 			scope: {
 				basic: 'r_liteprofile',
-				email: '',
+				email: 'r_emailaddress',
 				files: '',
 				friends: '',
 				photos: '',
-				publish: 'w_share',
-				publish_files: 'w_share',
+				publish: 'w_member_social',
+				publish_files: 'w_member_social',
 				share: '',
 				videos: '',
 				offline_access: ''
