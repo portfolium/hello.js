@@ -31,7 +31,7 @@
 			base: 'https://api.linkedin.com/v2/',
 
 			get: {
-				me: 'people/~:(picture-url,first-name,last-name,id,formatted-name,email-address)',
+				me: 'me:(picture-url,first-name,last-name,id,formatted-name)',
 
 				// See: http://developer.linkedin.com/documents/get-network-updates-and-statistics-api
 				'me/share': 'people/~/network/updates?count=@{limit|250}'
