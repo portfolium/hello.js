@@ -4897,7 +4897,7 @@ if (typeof chrome === 'object' && typeof chrome.identity === 'object' && chrome.
 
 			scope: {
 				basic: 'r_liteprofile',
-				email: 'r_emailaddress',
+				email: '',
 				files: '',
 				friends: '',
 				photos: '',

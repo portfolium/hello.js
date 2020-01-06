@@ -16,7 +16,7 @@
 
 			scope: {
 				basic: 'r_liteprofile',
-				email: 'r_emailaddress',
+				email: '',
 				files: '',
 				friends: '',
 				photos: '',
