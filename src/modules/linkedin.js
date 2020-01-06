@@ -15,8 +15,7 @@
 			refresh: true,
 
 			scope: {
-				/*basic: 'r_basicprofile',*/
-                basic: 'r_liteprofile',
+				basic: 'r_basicprofile',
 				email: 'r_emailaddress',
 				files: '',
 				friends: '',
@@ -29,11 +28,10 @@
 			},
 			scope_delim: ' ',
 
-			base: 'https://api.linkedin.com/v2/',
+			base: 'https://api.linkedin.com/v1/',
 
 			get: {
-				//me: 'people/~:(picture-url,first-name,last-name,id,formatted-name,email-address)',
-                me: 'people/~:(picture-url,first-name,last-name,id,formatted-name)',
+				me: 'people/~:(picture-url,first-name,last-name,id,formatted-name,email-address)',
 
 				// See: http://developer.linkedin.com/documents/get-network-updates-and-statistics-api
 				'me/share': 'people/~/network/updates?count=@{limit|250}'
