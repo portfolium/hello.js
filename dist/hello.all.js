@@ -4909,7 +4909,7 @@ if (typeof chrome === 'object' && typeof chrome.identity === 'object' && chrome.
 			},
 			scope_delim: ' ',
 
-			base: 'https://local.portfolium.com/proxy/linkedin/',
+			base: 'proxy/linkedin/',
 
 			get: {
 				me: 'me',
