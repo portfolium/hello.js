@@ -4994,8 +4994,8 @@ if (typeof chrome === 'object' && typeof chrome.identity === 'object' && chrome.
 			jsonp: function(p, qs) {
 				formatQuery(qs);
 				if (p.method === 'get') {
-					qs.format = 'jsonp';
-					qs['error-callback'] = p.callbackID;
+					//qs.format = 'jsonp';
+					//qs['error-callback'] = p.callbackID;
 				}
 			},
 
