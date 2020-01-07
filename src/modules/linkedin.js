@@ -28,7 +28,7 @@
 			},
 			scope_delim: ' ',
 
-			base: 'https://api.linkedin.com/v2/',
+			base: 'https://local.api.portfolium.com/linkedin/',
 
 			get: {
 				me: 'me',
