@@ -187,6 +187,7 @@
 		if (qs.access_token) {
 			qs.oauth2_access_token = qs.access_token;
 			delete qs.access_token;
+            delete qs.callback;
 		}
 	}
 
