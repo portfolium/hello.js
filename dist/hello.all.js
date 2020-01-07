@@ -1,4 +1,4 @@
-/*! hellojs v1.17.1 | (c) 2012-2018 Andrew Dodson | MIT https://adodson.com/hello.js/LICENSE */
+/*! hellojs v1.17.1 | (c) 2012-2020 Andrew Dodson | MIT https://adodson.com/hello.js/LICENSE */
 // ES5 Object.create
 if (!Object.create) {
 
@@ -4896,18 +4896,18 @@ if (typeof chrome === 'object' && typeof chrome.identity === 'object' && chrome.
 			refresh: true,
 
 			scope: {
-                basic: 'r_liteprofile',
-                email: 'r_emailaddress',
-                files: '',
-                friends: '',
-                photos: '',
-                publish: 'w_member_social',
-                publish_files: 'w_member_social',
-                share: '',
-                videos: '',
-                offline_access: ''
-            },
-            scope_delim: ' ',
+				basic: 'r_liteprofile',
+				email: 'r_emailaddress',
+				files: '',
+				friends: '',
+				photos: '',
+				publish: 'w_member_social',
+				publish_files: 'w_member_social',
+				share: '',
+				videos: '',
+				offline_access: ''
+			},
+			scope_delim: ' ',
 
 			base: 'https://api.linkedin.com/v2/',
 
@@ -4994,8 +4994,8 @@ if (typeof chrome === 'object' && typeof chrome.identity === 'object' && chrome.
 			jsonp: function(p, qs) {
 				formatQuery(qs);
 				if (p.method === 'get') {
-					//qs.format = 'jsonp';
-					//qs['error-callback'] = p.callbackID;
+					qs.format = 'jsonp';
+					qs['error-callback'] = p.callbackID;
 				}
 			},
 
@@ -5068,7 +5068,6 @@ if (typeof chrome === 'object' && typeof chrome.identity === 'object' && chrome.
 		if (qs.access_token) {
 			qs.oauth2_access_token = qs.access_token;
 			delete qs.access_token;
-            delete qs.callback;
 		}
 	}
 

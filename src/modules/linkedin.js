@@ -113,8 +113,8 @@
 			jsonp: function(p, qs) {
 				formatQuery(qs);
 				if (p.method === 'get') {
-					//qs.format = 'jsonp';
-					//qs['error-callback'] = p.callbackID;
+					qs.format = 'jsonp';
+					qs['error-callback'] = p.callbackID;
 				}
 			},
 
@@ -187,7 +187,6 @@
 		if (qs.access_token) {
 			qs.oauth2_access_token = qs.access_token;
 			delete qs.access_token;
-            delete qs.callback;
 		}
 	}
 
